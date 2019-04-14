@@ -1,5 +1,5 @@
 header:
-  - home:
+  - title:
       en      : &EN        Home
       zh-Hans : &ZH-HANS  主页
       url: /
