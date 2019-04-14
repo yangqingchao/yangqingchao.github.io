@@ -16,7 +16,7 @@ mathjax: true
 
 ## 代码块 ##
  - 预逻辑脚本代码：
-```Python
+```
 base=0
 def autoIncrement():
  global base
@@ -30,15 +30,15 @@ def autoIncrement():
 ```
  - 函数调用
 实现常规编号
-```Python
+```
 autoIncrement()
 ```
 实现给定长度编号，5为长度是5，如00001
-```Python
+```
 (str(autoIncrement())).zfill(5)
 ```
 实现从某个数字开始编号，下为从1000开始编号
-```Python
+```
 autoIncrement()+1000
 ```
 
