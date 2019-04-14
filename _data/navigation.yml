@@ -1,5 +1,5 @@
 header:
-  - titles:   主页
+  - title:   主页
     url: /
   - titles:
       en      : &EN       Archive
