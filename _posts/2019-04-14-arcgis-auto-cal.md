@@ -10,7 +10,8 @@ mathjax: true
 ## 进行字段计算（可以选中部分来计算） ##
 下面为计算方法和实现效果
 ![字段计算][2]
-[warning]重要提示：解析程序一定要选Python，并将“显示代码块”勾选！[/warning]
+重要提示：解析程序一定要选Python，并将“显示代码块”勾选！
+{:.warning}
 ## 代码块 ##
  - 预逻辑脚本代码：
 ```Python
@@ -38,7 +39,8 @@ autoIncrement()
 ```Python
 autoIncrement()+1000
 ```
-[warning]提示：如果你想给编号前加上字母，比如加上“BH”，请将 `return base` 修改为 `return "BH"+str(base)`即可。[/warning]
+提示：如果你想给编号前加上字母，比如加上“BH”，请将 `return base` 修改为 `return "BH"+str(base)`即可。
+{:.warning}
 
 
 
