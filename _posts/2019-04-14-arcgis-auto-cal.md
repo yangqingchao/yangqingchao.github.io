@@ -1,3 +1,9 @@
+---
+layout: article
+title: Document - Writing Posts
+mathjax: true
+---
+
 ## 添加字段 ##
 ![添加字段][1]
 ## 进行字段计算（可以选中部分来计算） ##
