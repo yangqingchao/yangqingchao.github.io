@@ -22,10 +22,10 @@ def autoIncrement():
  global base
  pStart = 1 #初始值
  pInterval = 1 #间隔值
- if (rec == 0): 
-  rec = pStart 
+ if (base == 0): 
+  base = pStart 
  else: 
-  rec = rec + pInterval 
+  base = base + pInterval 
  return base
 ```
  - 函数调用
