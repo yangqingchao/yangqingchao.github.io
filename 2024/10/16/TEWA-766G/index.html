@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>TEWA-766G等新款天邑光猫获取超密及开启telnet | 老杨</title><meta name="author" content="Yang"><meta name="copyright" content="Yang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="今天借鉴各位前辈的经验，总结了一下天邑新款光猫获取超密并开启telnet的方法。  U盘插入光猫，用Chrom或Edge浏览器打开光猫登录页面 192.168.1.1:8080 用光猫后面的账号密码登录光猫 依次点开 管理→设备管理，在“设备管理”上单击右键选择检查, 点击右侧Elements 利用快捷键 Ctrl+F 打开搜索，输入：set3_sessionKey ，得到set3_session">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TEWA-766G等新款天邑光猫获取超密及开启telnet">
+<meta property="og:url" content="https://yangqingchao.github.io/2024/10/16/TEWA-766G/index.html">
+<meta property="og:site_name" content="老杨">
+<meta property="og:description" content="今天借鉴各位前辈的经验，总结了一下天邑新款光猫获取超密并开启telnet的方法。  U盘插入光猫，用Chrom或Edge浏览器打开光猫登录页面 192.168.1.1:8080 用光猫后面的账号密码登录光猫 依次点开 管理→设备管理，在“设备管理”上单击右键选择检查, 点击右侧Elements 利用快捷键 Ctrl+F 打开搜索，输入：set3_sessionKey ，得到set3_session">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yangqingchao.github.io/img/serv00.png">
+<meta property="article:published_time" content="2024-10-16T06:10:38.000Z">
+<meta property="article:modified_time" content="2024-10-16T06:11:53.721Z">
+<meta property="article:author" content="Yang">
+<meta property="article:tag" content="TEWA-766">
+<meta property="article:tag" content="光猫超密">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yangqingchao.github.io/img/serv00.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yangqingchao.github.io/2024/10/16/TEWA-766G/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'TEWA-766G等新款天邑光猫获取超密及开启telnet',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-10-16 14:11:53'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/archives/"><i class="fa-fw fas fa-solid fa-box-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/tools/"><i class="fa-fw fas fa-solid fa-screwdriver-wrench"></i><span> 工具</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/serv00.png')"><nav id="nav"><span id="blog-info"><a href="/" title="老杨"><span class="site-name">老杨</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/archives/"><i class="fa-fw fas fa-solid fa-box-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/tools/"><i class="fa-fw fas fa-solid fa-screwdriver-wrench"></i><span> 工具</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">TEWA-766G等新款天邑光猫获取超密及开启telnet</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-16T06:10:38.000Z" title="发表于 2024-10-16 14:10:38">2024-10-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-16T06:11:53.721Z" title="更新于 2024-10-16 14:11:53">2024-10-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/archives/">archives</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="TEWA-766G等新款天邑光猫获取超密及开启telnet"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>今天借鉴各位前辈的经验，总结了一下天邑新款光猫获取超密并开启telnet的方法。</p>
+<ol>
+<li>U盘插入光猫，用Chrom或Edge浏览器打开光猫登录页面 192.168.1.1:8080 用光猫后面的账号密码登录光猫</li>
+<li>依次点开 管理→设备管理，在“设备管理”上单击右键选择检查,</li>
+<li>点击右侧<code>Elements</code> 利用快捷键 Ctrl+F 打开搜索，输入：<code>set3_sessionKey</code> ，得到<code>set3_sessionKey=</code>后面的数值，并替换下方链接中<code>set3_sessionKey_768</code><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://192.168.1.1:8080/usbbackup.cmd?action=backupeble&amp;set3_sessionKey=set3_sessionKey_768</span><br></pre></td></tr></table></figure></li>
+<li>将修改过的链接粘贴到网址栏并跳转，打开下图界面（PS：如果未打开下图界面，说明你操作慢了，重新获取数值即可），此时备份配合按钮为灰色</li>
+<li>点击右侧“Console”选项卡，复制粘贴以下代码（PS：粘贴用快捷键Ctrl+V）并回车，此时设备配置文件已经备份到你的U盘</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">usbsubarea = &#123;</span><br><span class="line">   selectedIndex: <span class="number">0</span>,</span><br><span class="line">   value: <span class="string">&quot;never_mind...&quot;</span>,</span><br><span class="line">   options:[</span><br><span class="line">     &#123;value: <span class="string">&quot;usb1_1&quot;</span>&#125;</span><br><span class="line">   ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li><p>U盘插入电脑，U盘里会有一个<code>e8_Config_Backup</code>文件夹，打开文件夹，同时打开软件RouterPassView,将文件夹里面的 .cfg 文件拖入软装RouterPassView中，在软件中利用快捷键 Ctrl+F 搜索：<code>TeleComAccount</code>，得到<code>&lt;Password&gt;E5Majm$QePg&amp;#37;&lt;/Password&gt;</code>之间的值就是超级密码，如本教程得到的密码为<code>E5Majm$QePg&amp;#37;</code></p>
+<div class="note warning flat"><p>warning 实际密码一定要将获得的密码中的<code>&amp;#37;</code>进行转换，比如我获得的实际密码是<code>E5Majm$QePg%</code></p>
+</div>
+</li>
+<li><p>网页重新打开192.168.1.1 用超级用户名：<code>telecomadmin</code> 和你刚才查到的超级密码即可以超级用户身份登录。登录进去就可以做你想做的事情了。</p>
+</li>
+<li><p>在 网络→远程连接里可以查看你的逻辑ID（LOID）</p>
+</li>
+<li><p>超级用户身份登录光猫以后，即可开启telnet，telnet用户名和密码均为<code>telnetadmin</code></p>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yangqingchao.github.io">Yang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yangqingchao.github.io/2024/10/16/TEWA-766G/">https://yangqingchao.github.io/2024/10/16/TEWA-766G/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yangqingchao.github.io" target="_blank">老杨</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/TEWA-766/">TEWA-766</a><a class="post-meta__tags" href="/tags/%E5%85%89%E7%8C%AB%E8%B6%85%E5%AF%86/">光猫超密</a></div><div class="post_share"><div class="social-share" data-image="/img/serv00.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/09/19/serv00/" title="serv00虚拟主机搭建alist个人网盘"><img class="cover" src="/img/serv00.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">serv00虚拟主机搭建alist个人网盘</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yang</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/10/16/TEWA-766G/" title="TEWA-766G等新款天邑光猫获取超密及开启telnet"><img src="/img/serv00.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TEWA-766G等新款天邑光猫获取超密及开启telnet"/></a><div class="content"><a class="title" href="/2024/10/16/TEWA-766G/" title="TEWA-766G等新款天邑光猫获取超密及开启telnet">TEWA-766G等新款天邑光猫获取超密及开启telnet</a><time datetime="2024-10-16T06:10:38.000Z" title="发表于 2024-10-16 14:10:38">2024-10-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/19/serv00/" title="serv00虚拟主机搭建alist个人网盘"><img src="/img/serv00.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="serv00虚拟主机搭建alist个人网盘"/></a><div class="content"><a class="title" href="/2024/09/19/serv00/" title="serv00虚拟主机搭建alist个人网盘">serv00虚拟主机搭建alist个人网盘</a><time datetime="2024-09-19T03:52:38.000Z" title="发表于 2024-09-19 11:52:38">2024-09-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/14/TagPlugins/" title="Butterfly主题标签外挂"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Butterfly主题标签外挂"/></a><div class="content"><a class="title" href="/2024/09/14/TagPlugins/" title="Butterfly主题标签外挂">Butterfly主题标签外挂</a><time datetime="2024-09-14T00:56:46.000Z" title="发表于 2024-09-14 08:56:46">2024-09-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/13/k3/" title="K3免拆机从384或386梅林降级到官改或TB梅林"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="K3免拆机从384或386梅林降级到官改或TB梅林"/></a><div class="content"><a class="title" href="/2024/09/13/k3/" title="K3免拆机从384或386梅林降级到官改或TB梅林">K3免拆机从384或386梅林降级到官改或TB梅林</a><time datetime="2024-09-13T01:31:19.000Z" title="发表于 2024-09-13 09:31:19">2024-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/12/hello-world/" title="Hello World"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/09/12/hello-world/" title="Hello World">Hello World</a><time datetime="2024-09-11T23:28:58.744Z" title="发表于 2024-09-12 07:28:58">2024-09-12</time></div></div></div></div></div></div></main><footer id="footer" style="background: #000"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Yang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  let initFn = window.walineFn || null
+
+  const initWaline = (Fn) => {
+    const waline = Fn(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://waline.329520.xyz',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: false,
+    }, null))
+
+    const destroyWaline = () => {
+      waline.destroy()
+    }
+
+    btf.addGlobalFn('pjax', destroyWaline, 'destroyWaline')
+  }
+
+  const loadWaline = async () => {
+    if (initFn) initWaline(initFn)
+    else {
+      await getCSS('https://cdn.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.min.css')
+      const { init } = await import('https://cdn.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.min.js')
+      initFn = init || Waline.init
+      initWaline(initFn)
+      window.walineFn = initFn
+    }
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
